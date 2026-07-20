@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://doremimiphoto-source.github.io/sitemap.xml
