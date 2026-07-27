@@ -32,14 +32,28 @@ main{max-width:760px;margin:0 auto;padding:0 20px 60px}
 .product img{width:120px;height:120px;object-fit:cover;border-radius:12px;flex:none;background:#f0ece8}
 .rank{position:absolute;top:-10px;left:-10px;width:30px;height:30px;background:var(--mint);color:#08302b;font-weight:800;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;box-shadow:0 3px 8px rgba(0,0,0,.12)}
 .pinfo{flex:1;min-width:0}
-.editor{display:inline-block;background:var(--gold);color:#3a2c07;font-size:.7rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 11px;border-radius:20px;margin-bottom:7px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.editor{display:inline-block;background:var(--gold);color:#3a2c07;font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 11px;border-radius:20px}
+.editor.val{background:var(--mint);color:#08302b}
+.editor.band{background:#efe7df;color:var(--sub)}
+/* 퀵픽 비교표 */
+.qp-wrap{overflow-x:auto;margin:0 0 30px}
+.quickpick{width:100%;border-collapse:collapse;font-size:.92rem;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.quickpick th{background:var(--navy);color:#fff;text-align:left;padding:11px 12px;font-size:.78rem;letter-spacing:.03em;text-transform:uppercase}
+.quickpick td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:middle}
+.qp-n{font-weight:800;color:var(--mint);filter:brightness(.7)}
+.qp-price{white-space:nowrap;font-weight:700}
+.qp-tag{display:inline-block;font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;padding:2px 7px;border-radius:10px;margin-left:4px;vertical-align:middle}
+.qp-tag.star{background:var(--gold);color:#3a2c07}
+.qp-tag.val{background:var(--mint);color:#08302b}
+.qp-buy{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;font-size:.82rem;padding:7px 15px;border-radius:24px;white-space:nowrap}
 .brand{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mint);filter:brightness(.75)}
 .pinfo h2{font-size:1.12rem;margin:2px 0 6px;line-height:1.25}
 .note{color:var(--ink);font-size:.95rem;font-weight:600;margin:0 0 6px}
 .detail{color:var(--sub);font-size:.9rem;line-height:1.55;margin:0 0 10px}
 .price{font-weight:700;font-size:.92rem;margin:0 0 12px}
 .approx{color:var(--sub);font-weight:400;font-size:.82rem}
-.buy{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:.9rem;padding:10px 18px;border-radius:30px}
+.buy{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;font-size:1rem;padding:14px 26px;border-radius:32px;box-shadow:0 4px 14px rgba(26,34,56,.18)}
 .buy:hover{background:#0f1526}
 @media(max-width:560px){.product{flex-direction:column}.product img{width:100%;height:200px}}
 .cta-block{background:#fff;border:1px dashed var(--line);border-radius:16px;padding:18px 20px;margin:26px 0}
